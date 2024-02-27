@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x 11-main.py $PYFILE
+chmod +x main.py $PYFILE
