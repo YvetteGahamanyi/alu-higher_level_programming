@@ -1,4 +1,4 @@
-#!/bin/bash/python3
+#!/usr/bin/python3
 def uppercase(input_string):
     output_string = ""
     for car in input_string:
