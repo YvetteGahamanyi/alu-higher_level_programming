@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-def common_elements(set_1, set_2):
+def uniq_add(my_list=[]):
     new_list = []
-    for i in set_1:
-        if i in set_2:
+    for i in my_list:
+        if i not in new_list:
+            sum += i
             new_list.append(i)
-    return new_list
+    return sum
