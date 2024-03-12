@@ -1,14 +1,19 @@
 #!/usr/bin/python3
 """no module to import"""
 
+
 class Square:
-    """ this class represents a square
+    """ 
+    this class represents a square
+    
     Attributes:
-    __size (int): size of the square
+        __size (int): size of the square
     """
     
     def __init__(self, size=0):
-        """ initializes a new instance of the Square class. """
+        """ 
+        Initializes a new instance of the Square class. 
+        """
         self.size = size
     
     @property
@@ -28,12 +33,14 @@ class Square:
         
         Parameters:
             value (init): the size to set
+            
         Raises:
             TypeError: if size is not an integer
             ValueError: if size is less than 0
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
+        
         if value < 0:
             raise ValueError("size must be >= 0")
         
