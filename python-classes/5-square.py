@@ -12,13 +12,13 @@ class Square:
     
     def __init__(self, size=0):
         """ 
-        Initializes a new instance of the Square class. 
+        Initializes a new instance of the Square class.
         """
         self.size = size
     
     @property
     def size(self):
-        """ 
+        """
         Getter method to retrieve the size of the square.
         
         returns: 
