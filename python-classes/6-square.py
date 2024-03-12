@@ -48,7 +48,6 @@ class Square:
     def position(self):
         """
         Getter method to retrieve the position of the square.
-
         Returns:
             tuple: The position of the square.
         """
@@ -57,7 +56,6 @@ class Square:
     def position(self, value):
         """
         Setter method to set the position of the square.
-
         Parameters:
             value (tuple): The position to set.
 
@@ -70,7 +68,6 @@ class Square:
     def area(self):
         """
         Calculates and returns the area of the square.
-
         Returns:
             int: The area of the square.
         """
