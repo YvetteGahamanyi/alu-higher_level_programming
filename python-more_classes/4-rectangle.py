@@ -3,13 +3,7 @@
 
 
 class Rectangle:
-    """
-    Class that defines properties of rectangle by: (based on 2-rectangle.py).
-
-    Attributes:
-        width (int): width of the rectangle.
-        height (int): height of the rectangle.
-    """
+    """ this is just a rectangle class"""
     def __init__(self, width=0, height=0):
         """Creates new instances of Rectangle.
 
@@ -19,25 +13,17 @@ class Rectangle:
         """
         self.height = height
         self.width = width
-
+        
     @property
     def width(self):
-        """Width retriver.
-
-        Returns:
-            int: the width of the rectangle.
-        """
+        """Width getter"""
         return self.__width
-
-    @property
+    
+    @property 
     def height(self):
-        """Height retriver.
-
-        Returns:
-            int: the height of the rectangle.
-        """
+        """Height getter"""
         return self.__height
-
+    
     @width.setter
     def width(self, value):
         """Property setter for width of rectangle.
@@ -109,6 +95,15 @@ class Rectangle:
                 rectangle.append("#")
             rectangle.append("\n")
 
+        # remove blank line
         rectangle.pop()
 
         return "".join(rectangle)
+
+    def __repr__(self):
+        """Returns a string representation of the rectangle.
+
+        Returns:
+            str: the rectangle representation.
+        """
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
