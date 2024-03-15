@@ -19,25 +19,25 @@ class Rectangle:
         """
         self.height = height
         self.width = width
-        
+
     @property
     def width(self):
-        """Width retriever.
+        """Width retriver.
 
         Returns:
             int: the width of the rectangle.
         """
         return self.__width
-    
+
     @property
     def height(self):
-        """Height retriever.
+        """Height retriver.
 
         Returns:
             int: the height of the rectangle.
         """
         return self.__height
-    
+
     @width.setter
     def width(self, value):
         """Property setter for width of rectangle.
@@ -55,25 +55,25 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
-    
+
     @height.setter
-    def width(self, value):
-        """Property setter for width of rectangle.
+    def height(self, value):
+        """Property setter for height of recyangle.
 
         Args:
-            value (int): width of the rectangle.
+            value (int): height of the rectangle.
 
         Raises:
-            TypeError: if width is not an integer.
-            ValueError: if width is less than 0.
+            TypeError: if height is not an integer.
+            ValueError: if height is less than 0.
         """
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         else:
-            self.__width = value
-    
+            self.__height = value
+
     def area(self):
         """Calculates area of a rectangle.
 
@@ -88,11 +88,11 @@ class Rectangle:
         Returns:
             int: perimeter.
         """
-        if self.__height == 0 or self.__width == 0:
+        if self.__height == 0 or self.width == 0:
             return 0
-        else: 
+        else:
             return 2 * (self.__height + self.__width)
-    
+
     def __str__(self):
         """Prints the rectangle with the character # .
 
@@ -109,6 +109,7 @@ class Rectangle:
                 rectangle.append("#")
             rectangle.append("\n")
 
+        # remove blank line
         rectangle.pop()
 
         return "".join(rectangle)
