@@ -1,2 +1,4 @@
---- list all rows
-SELECT * FROM first_table;
+-- listing all rows
+
+SELECT t1.*
+FROM first_table t1
