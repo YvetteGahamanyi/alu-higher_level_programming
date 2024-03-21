@@ -1,3 +1,3 @@
---- List all records in the table second_table
+-- listing all records
 
 SELECT score, name FROM second_table ORDER BY score DESC
