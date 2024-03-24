@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """__summary__
 - takes in a URL
-- sends a request to the URL and displays the body of the response (decoded in utf-8).
-- error management
+- sends a request to the URL and 
+- displays the body of the response (decoded in utf-8).
 """
 
 import requests
