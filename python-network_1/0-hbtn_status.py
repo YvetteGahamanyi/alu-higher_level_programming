@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Script that fetches https://alx-intranet.hbtn.io/status."""
+"""Script that fetches https://alu-intranet.hbtn.io/status."""
 from urllib.request import Request, urlopen
 
 
 if __name__ == "__main__":
-    req = Request("https://alx-intranet.hbtn.io/status")
+    req = Request("https://alu-intranet.hbtn.io/status")
     with urlopen(req) as response:
         body = response.read()
         print("Body response:")
