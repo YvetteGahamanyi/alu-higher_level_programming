@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """__summary__
-- takes in a URL and email
-- sends a request to the URL and displays the body of the response.
+- takes in a letter
+- sends a POST request to
+- http://0.0.0.0:5000/search_user with the letter as a parameter.
 """
 import sys
 import requests
