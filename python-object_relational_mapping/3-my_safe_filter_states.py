@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Python script that takes in an arg and displays all the
+    script that takes in an argument and displays all
     values in the states table of hbtn_0e_0_usa
 """
 
@@ -18,10 +18,10 @@ if __name__ == "__main__":
     )
     cursor = conn.cursor()
     sql = """ SELECT * FROM states
-        WHERE name LIKE BINARY '{}'
-        ORDER BY id ASC """.format(sys.argv[4])
+        WHERE name = %s
+        ORDER BY id ASC """
 
-    cursor.execute(sql)
+    cursor.execute(sql, (sys.argv[4],))
     data = cursor.fetchall()
 
     for row in data:
